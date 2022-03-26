@@ -4,6 +4,8 @@ from PySide6.QtUiTools import QUiLoader
 
 import os
 
+VERSION = "v1.0"
+
 HOST_DIR = os.path.dirname(os.path.abspath(__file__))
 path = os.path.join(HOST_DIR, "window.ui")
 
@@ -33,6 +35,8 @@ def calcClicked(*args):
     window.LGILabel.setText(str(round(lgi(lg_e, lg_c), 3)))
 
 
+statusVersionLabel = QtWidgets.QLabel(VERSION)
+window.statusbar.addWidget(statusVersionLabel)
 
 window.calculateButton.clicked.connect(calcClicked)
 
