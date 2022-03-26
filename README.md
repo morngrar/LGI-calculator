@@ -1,5 +1,8 @@
 # LGI-calculator
 
+![windows](screenshots/windows.png)
+![linux](screenshots/linux.png)
+
 LGI-calculator is a simple *learning gain improvement* calculator. A convenience tool to quickly calculate the learning gain for experimental and control groups in educational experiments.
 
 ## Installation and running
